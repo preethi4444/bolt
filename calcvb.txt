@@ -1,0 +1,23 @@
+Module vb
+ Sub Main
+  Dim n1,n2,ans As Integer
+  Dim a As Char
+  n1 = Console.ReadLine()
+  n2 = Console.ReadLine()
+  a = Console.ReadLine()
+  Select Case a 
+    Case "+"
+        ans= (n1+n2)
+    Case "-"
+        ans= (n1-n2)
+    Case "*"
+        ans= (n1*n2)
+    Case "/"
+        ans= (n1/n2)
+    Case Else 
+    
+        Exit Select 
+  End Select     
+  Console.WriteLine(ans)
+ End Sub
+End Module
