@@ -1,0 +1,42 @@
+using System;
+public class Calculator
+{
+   public static void Main(String[] args)
+   {
+       char a;
+	   String val;
+       int n1,n2,ans;
+       Console.Write("Enter integer: ");
+       val = Console.ReadLine();
+	   n1 = Convert.ToInt32(val);
+       Console.Write("Enter integer: ");
+       val = Console.ReadLine();
+	   n2 = Convert.ToInt32(val);
+       Console.Write("Enter operation: ");
+       val = Console.ReadLine();
+	   a = Convert.ToChar(val);
+       switch (a)
+       {
+          case '+':
+              ans=n1+n2;
+			  Console.WriteLine("result: ");
+              Console.WriteLine(ans);
+              break;
+          case '-':
+              ans=n1-n2;
+			  Console.WriteLine("result: ");
+              Console.WriteLine(ans);
+              break;
+          case '*':
+              ans=n1*n2;
+			  Console.WriteLine("result: ");
+              Console.WriteLine(ans);
+              break;
+          case '/':
+              ans=n1/n2;
+			  Console.WriteLine("result: ");
+              Console.WriteLine(ans);
+              break;
+       }
+   }
+}
