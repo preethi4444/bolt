@@ -7,11 +7,15 @@ namespace ConsoleApp1
         /// <summary>
         /// this method  finds given <paramref name="n"/>  is prime or not
         /// </summary>
+        /// <remarks>
+        /// this method finds prime or not for only integers</remarks>
         /// <param name="n">integer</param>
         /// <exception cref="System.Exception">
         /// when n is max value</exception>
         /// <returns>
         /// prime or not</returns>
+        /// <value>
+        /// returns the bool value of prime</value>
         public static bool Prime(int n)
         {
             //initialise cnt variable
@@ -39,8 +43,7 @@ namespace ConsoleApp1
             //convert it to the integer
             n = Convert.ToInt32(s);
             //store the return value in cnt1
-            bool cnt1= Prime(n);
-            
+            bool cnt1= Prime(n);            
             if (cnt1 == false)
             {
                 //prints the result to the console
