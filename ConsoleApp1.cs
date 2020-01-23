@@ -2,6 +2,10 @@ using System;
 
 namespace ConsoleApp1
 {
+    /// <summary>
+    /// the main program class
+    /// contains method to find a number is prime or not
+    /// </summary>
     class Program
     {
         /// <summary>
@@ -13,7 +17,7 @@ namespace ConsoleApp1
         /// <exception cref="System.Exception">
         /// when n is max value</exception>
         /// <returns>
-        /// prime or not</returns>
+        /// given integer is prime or not</returns>
         /// <value>
         /// returns the bool value of prime</value>
         public static bool Prime(int n)
